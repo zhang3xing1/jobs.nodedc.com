@@ -3,6 +3,7 @@ var Job = require('./Job.jsx');
 
 module.exports = React.createClass({
     getInitialState: function() {
+        // This will be an API call eventually...
         return {
             data: [
                 {

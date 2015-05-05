@@ -1,7 +1,19 @@
 var React = require('react');
 
 module.exports = React.createClass({
-    render: function() {
+    getInitialState: function() {
+        return {
+            company: 'TrackMaven',
+            position: 'Software Maven',
+            local: 'Washington, DC, USA',
+            lookingFor: 'Angular.js, Django, ElasticSearch',
+            postedDate: '4 April 2015',
+            description: '',
+            category: 'Engineer'
+        };     
+    },
+
+render: function() {
         return (
             <a href="#" className="list-group-item">
                 <h4 class="list-group-item-heading listing-company">
